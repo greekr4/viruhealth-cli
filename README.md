@@ -1,19 +1,13 @@
 # viruhealth-cli
 
-> AI-agent-optimized CLI for querying personal hospital health records via the lemonhc/mcare platform.
+> AI-agent-optimized CLI for querying personal hospital health records.
 
 Built for use inside AI agents (Claude Code, MCP tools, etc.) where structured JSON output and zero-interaction flows are required. All output is machine-readable JSON.
-
-## Supported Providers
-
-| Provider | Platform | Hospital Groups |
-|----------|----------|-----------------|
-| `lemonhc` | mcare (common-ui.lemonhc.com) | 인제대학교 백병원 (paik), and 13+ other groups |
 
 ## Prerequisites
 
 - Node.js >= 18
-- An active mcare account linked to a hospital
+- An active account linked to a supported hospital
 
 ## Installation
 
@@ -101,7 +95,7 @@ Exit code is `0` on success, `1` on error.
 
 ## Session storage
 
-Sessions are persisted at `~/.health-cli/sessions/lemonhc-session.json` as OAuth tokens (access + refresh). The refresh token is used automatically when the access token expires.
+Sessions are persisted at `~/.health-cli/sessions/` as OAuth tokens (access + refresh). The refresh token is used automatically when the access token expires.
 
 ## Agent usage
 
@@ -116,6 +110,3 @@ node bin/index.js get-lab-results --start-dt 20250101 --end-dt 20261231
 node bin/index.js get-schedule
 node bin/index.js get-treat-history --treat-cls O
 ```
-
-> [!NOTE]
-> This tool uses the lemonhc mobile API with an iPhone user-agent. TLS certificate verification is disabled (`rejectUnauthorized: false`) as required by the platform.
