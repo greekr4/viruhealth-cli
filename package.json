@@ -1,0 +1,20 @@
+{
+  "name": "viruhealth-cli",
+  "version": "0.1.0",
+  "description": "AI-agent-optimized CLI for personal health data (lemonhc, mcare)",
+  "private": true,
+  "type": "commonjs",
+  "license": "MIT",
+  "bin": {
+    "viruhealth": "bin/index.js"
+  },
+  "scripts": {
+    "start": "node bin/index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "commander": "^14.0.3"
+  }
+}
