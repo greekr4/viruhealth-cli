@@ -4,6 +4,15 @@
 
 Built for use inside AI agents (Claude Code, MCP tools, etc.) where structured JSON output and zero-interaction flows are required. All output is machine-readable JSON.
 
+## Supported Hospitals
+
+| 병원명 | 위치 |
+|--------|------|
+| 인제대학교 부산백병원 | 부산광역시 부산진구 |
+| 인제대학교 상계백병원 | 서울시 노원구 |
+| 인제대학교 일산백병원 | 경기도 고양시 |
+| 인제대학교 해운대백병원 | 부산광역시 해운대구 |
+
 ## Prerequisites
 
 - Node.js >= 18
